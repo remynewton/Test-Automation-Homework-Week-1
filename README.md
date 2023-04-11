@@ -10,6 +10,7 @@ I was later told by my mentor to do the Insertion sort algorithm.
 Here's my code for prompt 1:
 
 '''
+
 import java.util.*;
  
 class Hello {
@@ -21,11 +22,13 @@ class Hello {
         System.out.println("Hello, " + name + "!");
     }
 }
+
 '''
 
 And here's my code for prompt 2:
 
 '''
+
 import java.util.*;
 
 class InsertionSort {
@@ -60,6 +63,7 @@ class InsertionSort {
         }
     }
 }
+
 '''
 
 The above algorithm works by dividing an array into a sorted and an unsorted part before iteratively inserting each element from the unsorted part into its rightful position in the sorted part.
