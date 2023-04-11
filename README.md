@@ -64,4 +64,18 @@ class InsertionSort {
 
 The above algorithm works by dividing an array into a sorted and an unsorted part before iteratively inserting each element from the unsorted part into its rightful position in the sorted part.
 
+For example, if the array is 2, 42, 7, 8, then the steps are as follows:
+
+1. Starting with the second element (42), the algorithm compares it to the element before it (2). Since 42 is greater than 2, they remain in their current order.
+The array at this stage: 2, 42, 7, 8
+
+2. The third element (7) is compared to its neighbor before it (42) and since 7 is less than 42, it swaps places with 42.
+The array at this stage: 2, 7, 42, 8
+
+3. The third element (7) is compared to its neighbor before it (2) and since 7 is greater than 2, it remains in its current position.
+The array at this stage: 2, 7, 42, 8
+
+4. The fourth element (8) is compared to its neighbor before it (42) and since 8 is less than 42, it swaps places with 42. Then, it is compared to the next neighbor before it (7) and swaps places with 7.
+The array at this stage: 2, 7, 8, 42
+
 My mentor gave the quicksort algorithm as extra credit and I might do that one later and post the code here.
