@@ -110,6 +110,10 @@ class QuickSort {
             quickSort(arr, idx+1, r);
         }
     }
+
+    static void quickSorter(int arr[]) {
+        quickSort(arr, 0, arr.length-1);
+    }
     
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
@@ -123,7 +127,7 @@ class QuickSort {
         }
         System.out.println("Unsorted array of numbers: " + Arrays.toString(arr));
         long start = System.currentTimeMillis();
-        quickSort(arr, 0, arr.length-1);
+        quickSorter(arr);
         long end = System.currentTimeMillis();
         System.out.println("Sorted array of numbers: " + Arrays.toString(arr));
         System.out.println("It took exactly: " + (end-start) + "ms");
