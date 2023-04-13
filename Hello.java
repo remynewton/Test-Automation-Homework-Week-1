@@ -1,11 +1,9 @@
-import java.util.*;
- 
 class Hello {
     public static void main(String[] args) {
-        Scanner userInput = new Scanner(System.in);
-        System.out.println("What is your name?");
-        String name = userInput.nextLine();
-        userInput.close();
+        if (args.length == 0) {
+            System.out.println("Please provide your name as a command-line argument.");
+        }
+        String name = args[0];
         System.out.println("Hello, " + name + "!");
     }
 }
